@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- CDN FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sweets sample</title>
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="nav-wrapper">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-left">
+            <ul id="nav-left-items">
+                <li><a href="#">HOME</a></li>
+                <!-- <li><a href="#about-content" id="about-btn">SHOP</a></li>
+                <li><a href="#contact-content" id="contact-btn">CONTACT</a></li> -->
+                <li><a href="#footer-wrapper">SHOP</a></li>
+                <li><a href="#e-ad">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- SOME CONTENT TO SCROLL PAST -->
+         <div style="height: 300px;"></div>
+        <h1>The Cake Shop</h1>
+        <div class="nav-right">
+            <ul id="nav-right-items">
+                <li>YOUTUBE</li>
+                <li>INSTAGRAM</li>  
+                <img src="assets/images/cart-logo.png" alt="">
+            </ul>
+        </div>        
+    </nav>
+    <!-- SHOP -->
+     <section id="shop-slider">
+        <ul>
+            <li><img src="assets/images/slide-1.jpg" alt=""></li>
+            <li><img src="assets/images/slide-2.jpg" alt=""></li>
+            <li><img src="assets/images/slide-3.jpg" alt=""></li>
+        </ul>       
+        <h1>HOMEMADE SWEETS</h1>
+        <button><a href="#all-menu">SHOP NOW</a></button>
+     </section>
+    <!-- BEST SELLERS -->
+     <section class="best-wrapper">
+        <h2>BEST SELLERS</h2>
+        <h3>Description. Empty paragraph for your text.</h3>
+        <div class="best">
+            <div class="best-item">
+                <img src="assets/images/best-1.jpg" alt="">
+                <p class="item">MACARONS</p>
+                <p class="price">1.75$</p>
+            </div>                      
+            <div class="best-item">
+                <img src="assets/images/best-2.jpg" alt="">
+                <p class="item">DONUTS</p>
+                <p class="price">3.50$</p>
+            </div>
+            <div class="best-item">  
+                <img src="assets/images/best-3.jpg" alt="">
+                <p class="item">COFFEE</p>
+                <p class="price">2.50$</p>
+            </div>
+        </div>
+     </section>
+     <!-- MENU -->
+      <section class="menu-wrapper" id="all-menu">
+        <div class="menu-title">
+            <div class="line"></div>
+            <div class="title">ALL MENU</div>
+        </div>
+        <div class="background"></div>
+        <div class="container">
+            <div class="item"><img src="assets/images/menu-1.jpg" alt=""></div>
+            <div class="item"><img src="assets/images/menu-2.jpg" alt=""></div>
+            <div class="item"><img src="assets/images/menu-3.jpg" alt=""></div>
+            <div class="item"><img src="assets/images/menu-4.jpg" alt=""></div>
+            <div class="item"><img src="assets/images/menu-5.jpg" alt=""></div>
+            <div class="item"><img src="assets/images/menu-6.jpg" alt=""></div>
+        </div>
+      </section>
+      <!-- MORE -->
+      <section class="more-wrapper">
+            <h2>MORE</h2>
+            <div class="more-icon">
+                <div>
+                    <img src="assets/images/more-1.png" alt="" class="more-image">
+                    <p>Addresses of stores</p>
+                </div>
+                <div>
+                    <img src="assets/images/more-2.png" alt="" class="more-image">
+                    <p>Fast and free delivery</p>
+                </div>
+                <div>
+                    <img src="assets/images/more-3.png" alt="" class="more-image">
+                    <p>New pic up service</p>
+                </div>
+            </div>
+      </section>
+      <!-- FOOTER -->
+       <section class="footer-wrapper" id="footer-wrapper">
+            <div class="shop">
+                <h3>SHOP</h3>
+                <button class="tab-link" id="about-btn">About</button>
+                <button class="tab-link" id="faq-btn">FAQ</button>
+                <button class="tab-link" id="policy-btn">Store Policy</button>
+                <button class="tab-link" id="contact-btn">Contact Me</button>
+            </div>   
+            <div class="hours">
+                <h3>OPENING HOURS</h3>
+                <p>Mon-Fri 9:00 - 18:00</p>
+                <p>Saturday 9:00 - 17:00</p>
+                <p>Sunday 11:00 - 17:00</p>
+            </div>
+            <div class="address">
+                <h3>ADDRESSES</h3>
+                <p>Winchester House</p>
+                <p>Zanotto's Willow Market</p>
+                <p>Ymca-Hacienda Valley</p>
+            </div>
+            <button class="e-ad" id="e-ad">Email ADDRESS</button>
+            <button class="sub">SUBCRIBE NOW</button>
+       </section>
+       <!-- TABBING -->
+       <div class="tab-wrapper"> 
+        <div class="tab-content" id="about-content">
+            <h1 onclick="scrollToFooter()">About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fuga aliquid sit quae impedit dignissimos odit quos asperiores sint non?</p>
+        </div>
+        <div class="tab-content" id="faq-content">
+            <h1 onclick="scrollToFooter()">FAQ</h1>
+            <p>Q: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptatem.</p>
+            <a>A:Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti ipsa, saepe voluptates sed illo voluptatibus eius unde beatae nisi?
+            </a>
+        </div>
+        <div class="tab-content" id="policy-content">
+            <h1 onclick="scrollToFooter()">Store Policy</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ad, enim culpa odio magnam pariatur obcaecati nisi? Asperiores, unde nisi!</p>
+        </div>
+        <div class="tab-content" id="contact-content">
+            <h1 onclick="scrollToFooter()">Contact Me</h1>
+            <!-- <form> -->
+            <form action="/submit" method="post">
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" class="name" autocomplete="name"  required placeholder="First Last">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" class="email" autocomplete="email" required placeholder="email@...">
+                </div>
+        
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" class="text" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="send" class="send">
+                </div>
+            </form>
+        </div>
+        <!-- SUBSCRIBE NOW -->
+        <div class="tab-content" id="subscribe-content">
+            <h1 onclick="scrollToFooter()">Subscribe</h1>
+            <form>
+                <label for="required">Required: </label>
+                <input type="text" id="required" name="required" placeholder="ex. CheeseCakes" required><br>
+
+                <label for="quantity">Quantity: </label>
+                <input type="text" id="quantity" name="quantity"  required><br>
+
+                <label for="frequency">Frequency: </label>
+                <input type="text" id="frequency" name="frequency"  required><br>
+
+                <label for="subscribe-name">Name: </label>
+                <input type="text" id="subscribe-name" name="subscribe-name" placeholder="First Last" autocomplete="name" required><br>
+                
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address" autocomplete="street-address" required><br>
+
+                <label for="zip">Zip: </label>
+                <input type="text" id="zip" name="zip" required><br>
+                <div>
+                    <input type="submit" value="submit" class="subscrube-send">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Connection always on top of scripts -->
+    <!-- Online -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.1.min.js"></script>
+    <!-- offline -->
+    <script src="assets/js/CDN-jquery.js"></script>
+    <!-- Codes -->     
+    <script src="assets/js/javascript.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    
+</body>
+</html>

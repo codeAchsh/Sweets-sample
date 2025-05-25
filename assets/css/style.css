@@ -126,7 +126,7 @@
     padding: 0;
     list-style: none;
     display: flex;
-    transition: transform 3s ease; /* スライドのスピードを2秒に設定 */
+    transition: transform 3s ease; 
 }
 #shop-slider ul li{
     width: 100%;
@@ -562,6 +562,7 @@
         background-color: #f5e0f3;
         width: 15%;
         margin-left: 65%;
+        gap: 10px;
     }    
     .nav-right #nav-right-items{
         display: none;
@@ -572,126 +573,348 @@
         background-color: #f5e0f3;
         width: 35%;
         margin-left: 20%;
+        gap: 10px;
     }
     .nav-left #nav-left-items.show,
     .nav-right #nav-right-items.show {
         display: flex;
     }
 
-.nav-left ul li{
-    font-size: 10px;
-} 
-.nav-wrapper h1{
-    left: 5vh;
-} 
-.nav-right ul li{
-    font-size: 10px;
-}
-.nav-right img{
-    top: -1.5vh; 
-    left: 15vw;
-}
-/* SHOP-SLIDER */
-#shop-slider h1{
-    width: 60%;
-    text-align: center;
-    left: 20%;
-}
-#shop-slider button{
-    top: 50vh;
-}
-/* BEST SELLERS */
-/* MENU */
-.menu-wrapper{
-    height: 700px;
-}
-.container .item{
-    height: 80%;
-}
-/* MORE */
-.more-wrapper h2{
-    margin-top: 4em;
-}
-.more-icon{
-    width: 80%;
-}
-/* FOOTER */
-.footer-wrapper{
-    width: 100%;
-    height: 200px;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.tab-link{
-    padding-top: 0;
-}
-.shop,
-.hours,
-.address{
-    width: 25%;
-}
-.shop{
-    left: 5%;
-}
-.hours{
-    left: 24%;
-}
-.address{
-    left: 55%;
-}
-.hours p,
-.address p{
-    font-size: 15px;
-}
+    .nav-left ul li{
+        font-size: 10px;
+    } 
+    .nav-wrapper h1{
+        left: 5vh;
+    } 
+    .nav-right ul li{
+        font-size: 10px;
+    }
+    .nav-right img{
+        top: -1.5vh; 
+        left: 15vw;
+    }
+    /* SHOP-SLIDER */
+    #shop-slider h1{
+        width: 60%;
+        text-align: center;
+        left: 20%;
+    }
+    #shop-slider button{
+        top: 50vh;
+    }
+    /* BEST SELLERS */
+    /* MENU */
+    .menu-wrapper{
+        height: 700px;
+    }
+    .container .item{
+        height: 80%;
+    }
+    /* MORE */
+    .more-wrapper h2{
+        margin-top: 4em;
+    }
+    .more-icon{
+        width: 80%;
+    }
+    /* FOOTER */
+    .footer-wrapper{
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .tab-link{
+        padding-top: 0;
+    }
+    .shop,
+    .hours,
+    .address{
+        width: 25%;
+    }
+    .shop{
+        left: 5%;
+    }
+    .hours{
+        left: 24%;
+    }
+    .address{
+        left: 55%;
+    }
+    .hours p,
+    .address p{
+        font-size: 15px;
+    }
 
-.e-ad{
-    top: 40%;
-    right: 5%;
-}
-.sub{
-    top: 65%;
-    right: 5%;
-}
-/* TABBING */
-.tab-wrapper{
-    width: 100%;
-    height: 200px;
-    margin-left: 0;
-}
-.tab-content p{
-    top: 20%;
-}
-.tab-content a{
-    font-size: 10px;
-    top: 60%;
-}
-.tab-content .name{
-    width: 18%;
-    height: 10%;
-    top: 15%;
-    left: 50%;
-}
-.tab-content .email{
-    top: 36%;
-    left: 50%;
-}
-.tab-content .text{
-    height: 30%;
-    top: 60%;
-    left: 50%;
-}
-.tab-content .send{
-    left: 85%;
-}
-#subscribe-content h1{
-    left: 1em;
-}
-}
-
-
+    .e-ad{
+        top: 40%;
+        right: 5%;
+    }
+    .sub{
+        top: 65%;
+        right: 5%;
+    }
+    /* TABBING */
+    .tab-wrapper{
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+    }
+    .tab-content p{
+        top: 20%;
+    }
+    .tab-content a{
+        font-size: 10px;
+        top: 60%;
+    }
+    .tab-content .name{
+        width: 18%;
+        height: 10%;
+        top: 15%;
+        left: 50%;
+    }
+    .tab-content .email{
+        top: 36%;
+        left: 50%;
+    }
+    .tab-content .text{
+        height: 30%;
+        top: 60%;
+        left: 50%;
+    }
+    .tab-content .send{
+        left: 85%;
+    }
+    #subscribe-content h1{
+        left: 1em;
+    }
+    }
 
 
-/* font-family: "Protest Riot", sans-serif;
-font-family: "M PLUS 2", sans-serif;
-font-family: "Lunasima", sans-serif; */
+
+@media (max-width: 480px){
+    html,
+    body{
+        height: 100%;
+        min-height: 3100px !important;
+    }
+    .nav-wrapper {
+        overflow: visible !important;
+    }
+    .nav-left #nav-left-items{
+        top: 80%;
+        left: 60px;
+        gap: 10px;
+    }    
+    .nav-right #nav-right-items{
+        width: 70px;
+        top: 80%; 
+        left: 60px;
+        gap: 10px;
+    }
+
+    #nav-left-items.show, 
+    #nav-right-items.show {
+        max-height: 500px !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+    .show{
+        z-index: 9999 !important;
+    }
+    #nav-left-items a:hover{
+        color: #F69173;
+        cursor: pointer;
+    }
+    .nav-right ul li:hover{
+        color: #F69173;
+        cursor: pointer;
+    }
+    #nav-right-items img{
+        display: none;
+    }
+    #shop-slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #shop-slider h1{
+        width: 80%;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left: -30px;
+    }
+    #shop-slider button{
+        width: 100px;
+    }
+    .background{
+        height: 80%;
+    }
+    .container{
+        height: 95vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, auto);
+        row-gap: 2px;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .container .item{
+        width: 120px;
+        height: 140px !important;
+        margin-bottom: 0;
+    }
+    .more-wrapper h2{
+        margin-top: 10px;
+    }
+    .more-wrapper{
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .more-icon{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;   
+        gap: 50px;
+        margin-left: 65px;
+    }
+    .more-image{
+        margin-left: 0;
+    }
+    #footer-wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        display: grid;
+        grid-template-columns: 1fr, 1fr; 
+        grid-template-areas:
+            "shop hours"
+            "address address";
+        gap: 20px;
+        text-align: center;
+    }
+    .shop, 
+    .shop button,
+    .hours{
+        min-width: 180px;
+        text-align: left;
+        left: 60px;
+    }
+    .shop{
+        grid-area: shop;
+    }
+    .hours{
+        grid-area: hours;
+        left: -250px;
+    }
+    .address,
+    .address h3,
+    .address p{
+        grid-area: address;
+        text-align: left;
+        width:  100%;
+        left: 60px;
+    }
+    .e-ad{
+        width: 150px;
+        margin-top: 120px;
+    }
+    
+    .sub{
+        width: 150px;
+        margin-top: 80px;
+    }
+
+    #about-content h1,
+    #faq-content h1,
+    #policy-content h1,
+    #subscribe-content h1{
+        font-size: 25px;
+    }
+    #about-content p,
+    #faq-content p,
+    #policy-content p{
+        width: 60%;
+        font-size: 15px;
+    }
+    #faq-content a{
+        width: 50%;
+    }
+    #contact-content{
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        position: relative;
+    }
+    #subscribe-content{
+        width: 100%;
+        height: auto;
+        min-height: 600px;
+        position: relative;
+    }
+    #contact-content h1,
+    #subscribe-content h1{
+        width: 100%;
+        font-size: 25px;
+        position: absolute;
+        top: 40px;
+    }
+    #contact-content form,
+    #subscribe-content form{
+        width: 100%;
+        position: absolute;
+        top: 100px;
+    }
+    #contact-content form label,
+    #subscribe-content form label{
+        width: 20%;
+        margin-left: 60px;
+        padding: 0;
+    }
+    #contact-content form input,
+    #contact-content form textarea{
+        width: 50%;
+        height: 25px;
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+    #contact-content .email{
+        margin-top: 20px;
+    }
+    #contact-content form textarea{
+        margin-top: 30px;
+        height: 80px;
+    }
+    #contact-content .send{
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        top: 230px;
+        font-size: 15px;
+    }
+    #subscribe-content form #address{
+        width: 40%;
+        margin-top: 5px;
+        height: 60px;
+    }
+    #subscribe-content form .zip{
+        margin-top: 70px;
+    }
+    #subscribe-content form #zip{
+        width: 40%;
+        margin-top: 30px;
+    }
+    #subscribe-content .subscrube-send{
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        top: 370px;
+        left: 75%;
+        font-size: 15px;
+    }
+
+}
